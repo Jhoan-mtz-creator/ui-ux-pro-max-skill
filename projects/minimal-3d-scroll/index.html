@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Orden Automatización</title>
+  <meta name="description" content="Automatización de procesos con Gmail, Calendar, Drive y Sheets para negocios de Valledupar.">
+
+  <!-- Tipografía: Geist (display + texto) y Geist Mono (etiquetas y datos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#concepto">Saltar al contenido</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">Orden<span class="nav__dot" aria-hidden="true"></span></a>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto" class="nav__cta">Escribir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ 1. HERO ============
+         Dos capas de parallax: el texto (lento) y el objeto 3D (rápido). -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Automatización con Google · Valledupar</p>
+          <h1 class="hero__title" id="hero-title">Su negocio,<br>en orden.</h1>
+          <p class="hero__lede">Menos tareas repetidas. Más tiempo para atender a sus clientes.</p>
+        </div>
+
+        <!-- Único elemento 3D del hero: una "placa" de tres capas que se separan en Z con el scroll -->
+        <div class="hero__stage" aria-hidden="true">
+          <div class="slab">
+            <div class="slab__layer slab__layer--base"></div>
+            <div class="slab__layer slab__layer--mid"></div>
+            <div class="slab__layer slab__layer--top">
+              <ol class="flow">
+                <li><span>Gmail</span>Nuevo pedido</li>
+                <li><span>Sheets</span>Fila 214 agregada</li>
+                <li><span>Calendar</span>Entrega · jue 10:00</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="hero__hint" aria-hidden="true">Desplácese</p>
+    </section>
+
+    <!-- ============ 2. CONCEPTO ============
+         Sticky en escritorio: el bloque entra con profundidad y las palabras se encienden con el scroll. -->
+    <section class="concept" id="concepto" aria-labelledby="concept-label">
+      <div class="wrap concept__inner">
+        <p class="eyebrow" id="concept-label">El problema</p>
+        <p class="concept__text" data-words>Cada día se pierden horas copiando datos de un correo a una hoja, agendando citas a mano y buscando archivos que alguien guardó en otra carpeta. Casi todo eso se puede automatizar con las herramientas que usted ya tiene abiertas.</p>
+      </div>
+    </section>
+
+    <!-- ============ 3. SERVICIOS ============
+         Cards que se "levantan" del plano: rotateX + translateZ + sombra en capa aparte. -->
+    <section class="services" id="servicios" aria-labelledby="services-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Servicios</p>
+          <h2 class="h2" id="services-title" data-reveal>Cuatro frentes, con las herramientas de siempre.</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card" data-card>
+            <div class="card__shadow" aria-hidden="true"></div>
+            <div class="card__body">
+              <p class="card__tag">Gmail + Apps Script</p>
+              <h3 class="card__title">Correo</h3>
+              <p class="card__text">Etiquetas, respuestas y avisos automáticos. Cada correo importante llega a la persona que lo debe atender.</p>
+            </div>
+          </article>
+
+          <article class="card" data-card>
+            <div class="card__shadow" aria-hidden="true"></div>
+            <div class="card__body">
+              <p class="card__tag">Calendar + Forms</p>
+              <h3 class="card__title">Agenda</h3>
+              <p class="card__text">Citas que se agendan solas desde un formulario, con recordatorio al cliente un día antes.</p>
+            </div>
+          </article>
+
+          <article class="card" data-card>
+            <div class="card__shadow" aria-hidden="true"></div>
+            <div class="card__body">
+              <p class="card__tag">Drive + Sheets</p>
+              <h3 class="card__title">Archivos</h3>
+              <p class="card__text">Facturas, pedidos y reportes guardados en la carpeta correcta, con nombre y fecha, sin moverlos a mano.</p>
+            </div>
+          </article>
+
+          <article class="card" data-card>
+            <div class="card__shadow" aria-hidden="true"></div>
+            <div class="card__body">
+              <p class="card__tag">HTML + Formularios</p>
+              <h3 class="card__title">Página web</h3>
+              <p class="card__text">Una página clara que explica lo que usted vende y convierte visitas en solicitudes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PROCESO ============
+         Escritorio: sección fijada; la "cámara" viaja en Z a través de cuatro paneles.
+         Móvil / sin JS / movimiento reducido: lista vertical normal. -->
+    <section class="process" id="proceso" aria-labelledby="process-title">
+      <div class="process__pin">
+        <div class="wrap process__head">
+          <div>
+            <p class="eyebrow">Proceso</p>
+            <h2 class="h2" id="process-title" data-reveal>Cuatro pasos, en este orden.</h2>
+          </div>
+          <div class="process__meter" aria-hidden="true">
+            <span class="process__count"><span data-step-current>01</span> / 04</span>
+            <span class="process__bar"><i></i></span>
+          </div>
+        </div>
+
+        <div class="process__stage">
+          <ol class="tunnel">
+            <li class="step">
+              <span class="step__num">01</span>
+              <h3 class="step__title">Diagnóstico</h3>
+              <p class="step__text">Una conversación de 30 minutos para identificar qué tareas se repiten y cuántas horas cuestan cada semana.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">02</span>
+              <h3 class="step__title">Diseño</h3>
+              <p class="step__text">Un plano simple del flujo: qué entra, qué pasa y qué sale. Usted lo aprueba antes de construir nada.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">03</span>
+              <h3 class="step__title">Construcción</h3>
+              <p class="step__text">Se arma sobre Gmail, Calendar, Drive y Sheets. Su equipo no tiene que aprender un programa nuevo.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">04</span>
+              <h3 class="step__title">Acompañamiento</h3>
+              <p class="step__text">Una semana de prueba a su lado. Se ajusta hasta que funcione sin que nadie lo vigile.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. ABOUT ============
+         Tres capas de parallax a velocidades distintas: palabra de fondo, texto y ficha. -->
+    <section class="about" id="nosotros" aria-labelledby="about-title">
+      <p class="about__bg" aria-hidden="true" data-parallax="-40">Valledupar</p>
+      <div class="wrap about__grid">
+        <div class="about__copy" data-parallax="8">
+          <p class="eyebrow">Quién está detrás</p>
+          <h2 class="h2" id="about-title" data-reveal>Trabajo con lo que su negocio ya usa.</h2>
+          <p class="about__text">Nada de licencias extra ni promesas infladas. Primero entiendo cómo trabaja su equipo; después automatizo solo lo que de verdad ahorra tiempo.</p>
+          <p class="about__text">Si una tarea no vale la pena automatizar, se lo digo antes de cobrarle.</p>
+        </div>
+
+        <aside class="about__card" data-parallax="-14" data-lift aria-label="Ficha técnica">
+          <dl>
+            <div><dt>Herramientas</dt><dd>Gmail, Calendar, Drive, Sheets, Forms, Apps Script</dd></div>
+            <div><dt>Costo de software</dt><dd>$0 adicional sobre su cuenta de Google</dd></div>
+            <div><dt>Ubicación</dt><dd>Valledupar, Cesar · también remoto</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 6. FOOTER ============ -->
+  <footer class="footer" id="contacto" aria-labelledby="footer-title">
+    <div class="wrap">
+      <h2 class="footer__title" id="footer-title" data-rise>Hablemos.</h2>
+      <p class="footer__lede">Cuénteme qué tarea le quita más tiempo esta semana.</p>
+
+      <!-- Reemplace estos datos por los suyos -->
+      <dl class="footer__contact">
+        <div><dt>WhatsApp</dt><dd>+57 3XX XXX XXXX</dd></div>
+        <div><dt>Correo</dt><dd>hola@su-dominio.com</dd></div>
+      </dl>
+
+      <div class="footer__base">
+        <span>© 2026 Orden</span>
+        <span>Hecho a mano en Valledupar</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Librerías: versiones fijas (nunca "latest") para que nada cambie sin aviso -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
