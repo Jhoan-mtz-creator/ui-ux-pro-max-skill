@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Green Bouquet</title>
+  <meta name="description" content="Green Bouquet: rusco israelí y follaje premium, del cultivo directo a su cliente.">
+
+  <!-- Tipografía: Gloock (display, cercana al logo) + Jost (texto, como "farm to customer") -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Jost:wght@300;400;500&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#concepto">Saltar al contenido</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Green Bouquet, inicio">
+        Green Bouquet
+        <svg class="nav__sprig" viewBox="0 0 40 20" aria-hidden="true">
+          <path d="M2 14 C 12 12, 24 9, 38 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M12 12 C 10 6, 14 3, 18 2 C 18 7, 16 10, 12 12 Z" fill="currentColor"/>
+          <path d="M22 9 C 24 14, 29 15, 32 14 C 30 10, 26 8, 22 9 Z" fill="currentColor"/>
+          <path d="M28 7 C 28 2, 32 0, 36 0 C 35 4, 32 6, 28 7 Z" fill="currentColor"/>
+        </svg>
+      </a>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="#productos">Productos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#finca">La finca</a>
+        <a href="#contacto" class="nav__cta">Pedidos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ 1. HERO ============
+         Parallax de 2 capas: texto (lento) y placa 3D con la foto (rápida). -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Farm to customer</p>
+          <h1 class="hero__title" id="hero-title">Rusco israelí y follaje <em>premium</em>.</h1>
+          <p class="hero__lede">Cultivado bajo invernadero, cortado a mano y despachado sin intermediarios.</p>
+          <a class="btn" href="#contacto">Solicitar cotización</a>
+        </div>
+
+        <!-- Único elemento 3D del hero: placa de 3 capas; la superior es la foto del producto -->
+        <div class="hero__stage" aria-hidden="true">
+          <div class="slab">
+            <div class="slab__layer slab__layer--base"></div>
+            <div class="slab__layer slab__layer--mid"></div>
+            <figure class="slab__layer slab__layer--top">
+              <img src="assets/img/rusco-detalle.jpg" alt="" width="875" height="982" decoding="async" fetchpriority="high">
+              <figcaption><i>Ruscus hypophyllum</i><span>Rusco israelí</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <p class="hero__hint" aria-hidden="true">Desplácese</p>
+    </section>
+
+    <!-- ============ 2. CONCEPTO ============ -->
+    <section class="concept" id="concepto" aria-labelledby="concept-label">
+      <div class="wrap concept__inner">
+        <p class="eyebrow" id="concept-label">Del cultivo a su cliente</p>
+        <p class="concept__text" data-words>Cada tallo sale de nuestra finca con el mismo verde intenso con que se cortó. Sin bodegas de paso ni intermediarios: lo que usted recibe es lo que cultivamos.</p>
+      </div>
+    </section>
+
+    <!-- ============ 3. PRODUCTOS ============
+         Cards que se levantan del plano: rotateX + translateZ + sombra en capa aparte. -->
+    <section class="products" id="productos" aria-labelledby="products-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Productos</p>
+          <h2 class="h2" id="products-title" data-reveal>Follaje que sostiene cada arreglo.</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card" data-card>
+            <div class="card__shadow" aria-hidden="true"></div>
+            <div class="card__body">
+              <div class="card__media"><img src="assets/img/rusco-detalle.jpg" alt="Hojas de rusco israelí recién cortadas" width="875" height="982" loading="lazy" decoding="async"></div>
+              <p class="card__tag">Producto principal</p>
+              <h3 class="card__title">Rusco israelí</h3>
+              <p class="card__text">Hoja ancha, brillante y de verde intenso. Resiste bien el transporte y dura en florero mucho más que la flor que acompaña.</p>
+            </div>
+          </article>
+
+          <article class="card" data-card>
+            <div class="card__shadow" aria-hidden="true"></div>
+            <div class="card__body">
+              <div class="card__media"><img src="assets/img/invernadero.jpg" alt="Plantas de follaje creciendo bajo invernadero" width="734" height="1100" loading="lazy" decoding="async"></div>
+              <p class="card__tag">Línea premium</p>
+              <h3 class="card__title">Follaje premium</h3>
+              <p class="card__text">Tallos seleccionados por largo, color y forma de hoja. Para floristerías y diseñadores que no aceptan relleno.</p>
+            </div>
+          </article>
+
+          <article class="card" data-card>
+            <div class="card__shadow" aria-hidden="true"></div>
+            <div class="card__body">
+              <div class="card__media"><img src="assets/img/corte.jpg" alt="Trabajador cortando tallos de rusco a mano en el invernadero" width="775" height="1100" loading="lazy" decoding="async"></div>
+              <p class="card__tag">Bajo pedido</p>
+              <h3 class="card__title">Pedidos a medida</h3>
+              <p class="card__text">Usted define el largo de tallo, el tamaño del bonche y el empaque. Nosotros cortamos para su fecha de entrega.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PROCESO ============
+         Escritorio: sección fijada; la cámara viaja en Z por 4 paneles.
+         Móvil / sin JS / movimiento reducido: lista vertical. -->
+    <section class="process" id="proceso" aria-labelledby="process-title">
+      <div class="process__pin">
+        <div class="wrap process__head">
+          <div>
+            <p class="eyebrow">Proceso</p>
+            <h2 class="h2" id="process-title" data-reveal>De la planta al despacho.</h2>
+          </div>
+          <div class="process__meter" aria-hidden="true">
+            <span class="process__count"><span data-step-current>01</span> / 04</span>
+            <span class="process__bar"><i></i></span>
+          </div>
+        </div>
+
+        <div class="process__stage">
+          <ol class="tunnel">
+            <li class="step">
+              <span class="step__num">01</span>
+              <h3 class="step__title">Cultivo</h3>
+              <p class="step__text">El rusco crece bajo invernadero y polisombra, protegido del sol directo y de la lluvia. Así la hoja conserva su color.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">02</span>
+              <h3 class="step__title">Corte a mano</h3>
+              <p class="step__text">Cada tallo se corta a mano cuando la hoja está madura y firme. Nada se corta antes de tiempo para llenar un pedido.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">03</span>
+              <h3 class="step__title">Selección</h3>
+              <p class="step__text">Se clasifica por largo y calidad de hoja, se hidrata y se arma en bonches parejos.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">04</span>
+              <h3 class="step__title">Despacho</h3>
+              <p class="step__text">Sale empacado de la finca hacia su negocio. Usted sabe de dónde viene cada caja.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. LA FINCA ============
+         Parallax de 3 capas: foto aérea (lenta, dentro de su marco), foto del corte (rápida) y texto. -->
+    <section class="farm" id="finca" aria-labelledby="farm-title">
+      <div class="wrap farm__grid">
+        <div class="farm__copy">
+          <p class="eyebrow">La finca</p>
+          <h2 class="h2" id="farm-title" data-reveal>Cultivamos lo que vendemos.</h2>
+          <p class="farm__text">Green Bouquet nace en el campo. Los mismos invernaderos que ve en la foto son los que abastecen cada pedido, y las mismas manos que cortan son las que revisan la calidad.</p>
+          <p class="farm__text">Por eso podemos responder por cada tallo.</p>
+        </div>
+
+        <div class="farm__visual">
+          <figure class="farm__aerial" data-lift>
+            <img src="assets/img/finca-aerea.jpg" alt="Vista aérea de los invernaderos de la finca entre montañas" width="913" height="1081" loading="lazy" decoding="async" data-inner-parallax>
+          </figure>
+          <figure class="farm__portrait" data-parallax="-22">
+            <img src="assets/img/corte.jpg" alt="Trabajador de la finca sonriendo mientras corta rusco" width="775" height="1100" loading="lazy" decoding="async">
+            <figcaption>Corte a mano, tallo por tallo.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 6. FOOTER ============ -->
+  <footer class="footer" id="contacto" aria-labelledby="footer-title">
+    <div class="wrap">
+      <h2 class="footer__title" id="footer-title" data-rise>Hagamos su pedido.</h2>
+      <p class="footer__lede">Cuéntenos qué cantidad necesita y para qué fecha. Le respondemos con disponibilidad y precio.</p>
+
+      <!-- Reemplace estos datos por los reales de la empresa -->
+      <dl class="footer__contact">
+        <div><dt>WhatsApp</dt><dd>+57 3XX XXX XXXX</dd></div>
+        <div><dt>Correo</dt><dd>pedidos@greenbouquet.co</dd></div>
+        <div><dt>Instagram</dt><dd>@greenbouquet</dd></div>
+      </dl>
+
+      <div class="footer__base">
+        <img class="footer__logo" src="assets/img/logo.jpg" alt="Logo de Green Bouquet, farm to customer" width="550" height="340" loading="lazy">
+        <span>© 2026 Green Bouquet · Rusco israelí y follaje premium</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Librerías con versión fija -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
